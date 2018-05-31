@@ -20,7 +20,7 @@
     var HRTemplate = Handlebars.compile($('#hr-template').html());
     $('.row').sheetrock({
       url: spreadsheet,
-      query: "select A, B, C, D, E, F, G",
+      query: "select A, B, C, D, E, F, G, H, I, J, K, L, M, N",
       rowTemplate: HRTemplate
     });
   });
@@ -57,35 +57,35 @@
   <section class="hero is-fullheight">
   </section>
   <div class="is-overlay has-text-centered single-spaced" style="top: 200px;">
-    <div class="box" style="width: 44%; margin: auto; background-color: rgba(255, 255, 255, 0.7)"><br>
-      <h1 class="title is-1 has-text-weight-light" style="color: #6501D0; font-family:Raleway;">Neurodiversity Works</h1><br>
-      <h2 class="subtitle is-4" style="color: #6501D0; font-family:Quicksand;">Find employability support and opportunities that help you to fulfil your potential</h2><br>
-      <a class="button is-large is-primary is-inverted" style="color: #43C751; font-family:Quicksand;" href="./survey.html">Input your opportunity</a><br><br><br>
+    <div class="box" style="width: 46%; margin: auto; padding: 2%; background-color: rgba(255, 255, 255, 0.7)"><br>
+      <h1 class="title is-1 has-text-weight-light" style="color: #6501D0; font-family:Raleway; text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.8);">Neurodiversity Works</h1><br>
+      <h2 class="subtitle is-4" style="color: #6501D0; font-family:Quicksand; text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.5);">Find employability support and opportunities that help you to fulfil your potential</h2><br>
+      <a class="button is-large is-primary is-inverted" style="color: #43C751; font-family:Quicksand; text-shadow: 0px 0px 5px rgba(150, 150, 150, 0.3);" href="./survey.html">Input your opportunity</a><br><br><br>
     </div>
-    <section class="container" style="top: 60px; width: 63%;">
+    <section class="container" style="top: 60px; width: 73%;">
       <columns style="display: flex; flex-wrap: wrap;">
         <div class="row" style="display: flex; flex-wrap: wrap;">
           <script id="hr-template" type="text/x-handlebars-template">
             <div class="column">
-              <div class="card">
-                <div class="card-image">
-                  <img src="http://via.placeholder.com/450x150" alt="Placeholder image">
+              <div class="card" style="padding: 3%;">
+                <div class="card-image" style="padding: 5%; width: 350px;">
+                  <img src="{{cells.OrganisationLogo}}" alt="{{cells.OrganisationName}} logo">
                 </div>
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class"title is-2">{{cells.Name}}</p>
-                      <p class"title is-2">{{cells.Email}}</p>
-                    </div>
-                  </div>
-                  <div class="content">
-                    <p class"title is-2">{{cells.Address}}</p>
-                  </div>
-                  <div class="content">
-                    <p class"title is-2">{{cells.TVType}}</p>
-                  </div>
-                  <div class="content">
-                    <p class"title is-2">{{cells.ClinicalGroup}}</p>
+                      <p class="subtitle is-6"><b>Organisation: </b>{{cells.OrganisationName}}</p>
+                      <p class="subtitle is-6"><b>Opportunity: </b>{{cells.OpportunityName}}</p>
+                    <p class="subtitle is-6"><b>Address: </b>{{cells.OpportunityAddress}}</p>
+                    <p class="subtitle is-6"><b>Description: </b>{{cells.OpportunityDescription}}</p>
+                    <p class="subtitle is-6"><b>Start Date: </b>{{cells.OpportunityStartDate}}</p>
+                  <p class="subtitle is-6"><b>Who is it for? </b>{{cells.ClinicalGroup}}</p>
+                  <p class="subtitle is-6"><b>Paid Opportunity: </b>{{cells.Paid}}</p>
+                  <p class="subtitle is-6"><b>Extra Information: </b>{{cells.ExtraInformation}}</p>
+                  <p class="subtitle is-6"><b>Applications Link: </b><a href="{{cells.OpportunityLink}}">{{cells.OpportunityLink}}</a></p>
+                  <p class="subtitle is-6"><b>Deadline for Applications: </b>{{cells.OpportunityDeadline}}</p>
+                </div>
+              </div>
                   </div>
                 </div>
               </div>
