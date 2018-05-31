@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+  <link rel="stylesheet" href="./helpers.css">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./survey.css">
+  <!-- <link rel="stylesheet" href="/Users/createjobs/Documents/digitalpipeline/experiments/bulma-site/debug.css"> -->
+  <title>My Survey</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <navbar>
+    <div class="hero-head">
+      <div class="columns is-mobile is-marginless heading has-text-weight-bold">
+        <div class="column center desktop">
+          <a href="./index.html">
+            <p class="navbar-item">Neurodiversity Works</p>
+          </a>
+        </div>
+        <div class="column center">
+          <figure class="image">
+            <a href="./index.html">
+              <img src="https://i.imgur.com/AVve11P.jpg" style=" width: 5rem; height: 3rem;">
+            </a>
+          </figure>
+        </div>
+        <div class="column center desktop">
+          <a href="./about.html">
+          <p class="navbar-item">About</p>
+        </a>
+        </div>
+      </div>
+    </div>
+  </navbar>
+  <!-- End Navbar -->
+  <section class="hero is-fullheight">
+  </section>
+  <div class="survey is-overlay has-text-centered" style="top: 200px;">
+    <div class="box" style="width: 44%; margin: auto; background-color: rgba(255, 255, 255, 0.7)">
+      <h1 class="title is-2 has-text-weight-light" style="color: #6501D0; font-family:Raleway;">Input your opportunity</h1>
+      <span class="subtitle" style="color: #6501D0; font-family:Quicksand;">By submitting you agree for details to be held and displayed publicly</span>
+      <div class="columns">
+        <div class="column is-fullheight">
+          <div class="control">
+            <input class="input" type="text" required/>
+            <label class="label">Organisation Name</label>
+            <i class="bar"></i>
+          </div>
+          <div class="control">
+            <input class="input" type="url" required/>
+            <label class="label">Organisation Logo</label>
+            <i class="bar"></i>
+          </div>
+          <div class="control">
+            <input class="input" type="text" required>
+            <label class="label">Opportunity Name</label>
+            <i class="bar"></i>
+          </div>
+          <div class="control">
+            <input class="input" type="text" required>
+            <label class="label">Description of Opportunity</label>
+            <i class="bar"></i>
+          </div>
+          <div class="control">
+            <input class="input" type="date" required>
+            <label class="label">Start Date for Opportunity</label>
+            <i class="bar"></i>
+          </div>
+          <div class="control">
+            <input class="input" type="date" required>
+            <label class="label">Deadline for Applications</label>
+            <i class="bar"></i>
+          </div>
+          <div class="control">
+            <input class="input" type="url" required>
+            <label class="label">Link for Applications</label>
+            <i class="bar"></i>
+          </div>
+          <p class="control">
+            <input class="input" type="email" value="hello@" required>
+            <label class="label">Email Contact (Neurodiversity Works may contact you if necessary)</label>
+            <i class="bar"></i>
+          </p>
+          <p class="control">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+            <label class="label">Subject</label>
+            <i class="bar"></i>
+          </p>
+          <p class="checkbox-control">
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Autism Spectrum Conditions
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              ADHD
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Dyslexia, Dyspraxia, Dyscalculia and Other Learning Difficulties
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Learning Disability
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Schizophrenia, Bipolar or other Psychotic Spectrum Conditions
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Personality Disorder and Behavioural Conditions
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Epilepsy
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Tourette Syndrome
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Speech Disorder
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Obsessive Compulsive Disorder
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Other neurological / neurodevelopmental
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              Disabled People
+            </label>
+            <label>
+              <input type="checkbox"/>
+              <i class="helper"></i>
+              No Specific Diagnosis
+            </label>
+          </p>
+          <h6>Is the opportunity paid?</h6>
+          <p class="radio-control">
+            <label>
+              <input type="radio" name="question">
+              <i class="helper"></i>
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="question">
+              <i class="helper"></i>
+              No
+            </label>
+          </p>
+          <p class="control">
+            <textarea class="textarea" required></textarea>
+            <label class="label">Message</label>
+            <i class="bar"></i>
+          </p>
+          <p class="control">
+            <button class="button" style="background-color:#6501D0; color:white;">Submit</button>
+            <button class="button" style="background-color:#6501D0; color:white;">Cancel</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
